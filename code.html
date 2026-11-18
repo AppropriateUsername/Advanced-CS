@@ -2,7 +2,40 @@
 <html>
 <body>
 
-<h1>What type of kitchen appliance are you?</h1>
+<h1>Overarching Question</h1>
+
+<h3>Smaller Question 1</h3>
+
+<button style='background-color:LightCoral;' onclick="recordTally('Result1')">Answer 1</button>
+<button style='background-color:LightPink;' onclick="recordTally('Result2')">Answer 2</button>
+<button style='background-color:Lavender;'onclick="recordTally('Result3')">Answer 3</button>
+<button style='background-color:LightCyan;' onclick="recordTally('Result4')">Answer 4</button>
+
+<h3>Smaller Question 2</h3>
+
+<button style='background-color:LightCoral;'onclick="recordTally('Result1')">Answer 1</button>
+<button style='background-color:LightPink;'onclick="recordTally('Result2')">Answer 2</button>
+<button style='background-color:Lavender;' onclick="recordTally('Result3')">Answer 3</button>
+<button style='background-color:LightCyan;' onclick="recordTally('Result4')">Answer 4</button>
+
+<h3>Smaller Question 3</h3>
+<button style='background-color:LightCoral;'onclick="recordTally('Result1')">Answer 1</button>
+<button style='background-color:LightPink;'onclick="recordTally('Result2')">Answer 2</button>
+<button style='background-color:Lavender;' onclick="recordTally('Result3')">Answer 3</button>
+<button style='background-color:LightCyan;' onclick="recordTally('Result4')">Answer 4</button>
+
+<script>
+  const tallies = {
+    Result1: 0,
+    Result2: 0,
+    Result3: 0,
+    Result4: 0
+  };
+  
+  function recordTally(category) {
+    tallies[category]++;
+  }
+</script>
 
 </body>
 </html>
